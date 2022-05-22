@@ -1,0 +1,337 @@
+:root{
+    --color_primario: beige;
+    --color_segundario: #01baef;
+    --color_terciario: bisque;
+    --color_cuarto: rgb(233, 190, 137);
+    --color_quinto: rgb(177, 177, 177);
+    --color_sexto: black;
+    --type: 'Poppins', sans-serif;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+body {
+    background-color: var(--color_primario);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.container{
+    display: flex;
+    width: 70%;
+    max-width: 1700px;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: nowrap;
+
+}
+
+.logo img{
+    max-width: 150px;
+}
+
+nav {
+    background-color:var(--color_primario);
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+}
+
+nav .nav {
+    padding: .9em 0em;
+}
+
+
+nav .container ul li {
+    display: inline;
+    padding: .2em;
+}
+
+nav .container ul li a{
+    font-size: 1em;
+    color: var(--color_segundario);
+    padding: .8em 1em;
+    border-radius: 10px;
+}
+
+nav .container ul li a:hover{
+    color: var(--color_primario);
+    background-color:var(--color_segundario);
+}
+
+section .row{
+    display: flex;
+    margin-top: 8em;
+}
+section .wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+    width: 70%;
+    height: 95vh;
+    max-width: 100em;
+    margin: auto;
+    text-align: center;
+    color: var(--color_primario);
+    font-size: 1.4em;
+}
+
+
+
+.bienvenida .down {
+    margin-top: -2em;
+}
+
+.bienvenida {
+    background-color: var(--color_segundario);
+    clip-path: polygon(0 0,100% 0,100% 100%,0 calc(100% - 50px));
+     display: flex;
+     
+   
+}
+
+
+
+.foto img{
+    width: 300px;
+    border-radius: 100%;
+    
+} 
+
+.terxto_perfil{
+    float: right;
+}
+
+
+.servicio {
+    background-color: var(--color_terciario);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+.text{
+    padding: 0em 1,3em 1,3em;
+}
+
+.container_imagen{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+
+}
+ .row1{
+     display: flex;
+ }
+
+ .row1 img{
+    
+    width: 150px;
+ }
+
+
+.servicio img{
+    border-radius: 100%;
+
+}
+
+.servicio div{
+    padding: 1em 1em;
+}
+
+.servicio1 .text p{
+    font-size: 0,8em;
+    color: var(--color_sexto);
+}
+
+.servicio1 .text h1{
+    
+    color: var(--color_sexto);
+}
+
+.servicio h1{
+    color: var(--color_sexto);
+    font-size: 0,8em;
+}
+
+.servicio p{
+    color: var(--color_sexto);
+}
+
+.otro_servicio {
+    background-color: var(--color_cuarto);
+    display: flex;
+        justify-content: center;
+    text-align: center;
+}
+
+.video{
+    background-color: var(--color_segundario);
+}
+.ubicarme{
+    background-color: var(--color_quinto);
+}
+
+.wrap ul li {
+    display: inline;
+    
+}
+
+.wrap ul li a{
+    padding-top: 2em;
+    
+}
+
+.ubicarme .text_2{
+    padding-top: 3em;
+}
+
+.down{
+    --animate-repeate: 5s;
+    padding-top: 1.875em;
+}
+
+/* inicio de estilos de slider */
+.swiper {
+    width: 100%;
+    height: 70%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .swiper-slide {
+    width: 80%;
+  }
+
+  .swiper-slide:nth-child(2n) {
+    width: 60%;
+  }
+
+  .swiper-slide:nth-child(3n) {
+    width: 40%;
+  }
+  /* fin de estilos de slider */
+
+  /*inicio de otro estilo*/
+
+
+
+  /* ##Dispositivo = Smartphones de 320px a 479px */
+@media (min-width: 320px) and (max-width: 480px) {
+
+    .row{
+        flex-direction: column;
+        font-size: .8em;        
+    }
+    section .wrap {
+        width: 75%;
+        font-size: .8em;
+      
+    }
+
+    .foto img{
+        max-width: 50px;
+        /*padding-top: 10px;*/
+    }
+    
+    .row1{
+    flex-direction: column;
+    width: auto;
+    }
+       
+    .servicio div{
+        padding:0em;
+    }
+    
+    .swiper {
+        width: 95%;
+        height: 20%;
+      }
+  
+
+   section .wrap {
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.nav{
+    display: initial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+
+
+ul{
+    height: 3.2em;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+nav ul li {
+    justify-content: center;   
+    font-size: 10px;
+    
+}
+
+.logo img{
+    max-width: 100px;
+      
+}
+
+.img{
+    justify-content: center;
+}
+
+}
+
+    /*Aquí van las propiedades y valores según el dispositivo*/
+  
